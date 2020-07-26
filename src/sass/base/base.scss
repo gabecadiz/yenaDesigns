@@ -1,0 +1,19 @@
+/* basic reset using universal selector */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* setting global font-size
+use font-size of 62.5% to allow users to have changed default font size if needed, if not it will default from 16root px to 10pxs*/
+html {
+  font-size: 62.5%;
+}
+
+/* setting font properties for whole webpage, inherited into all properties */
+body {
+  box-sizing: border-box;
+}

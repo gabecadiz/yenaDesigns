@@ -1,24 +1,25 @@
 import React from 'react';
-import Icon from './images/Icon.svg';
-import './App.scss';
+import './sass/main.scss';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import Navbar from './Navbar';
-import About from './About';
-import Work from './Work';
-import WorkProject from './WorkProject';
-import Home from './Home';
+import Navbar from './components/Navbar';
+import About from './pages/About';
+import Work from './pages/Work';
+import WorkProject from './pages/WorkProject';
+import Home from './pages/Home';
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Route path="/" exact component={Home} />
-        <Route path="/work" exact component={Work} />
-        <Route path="/work/:project" component={WorkProject} />
-        <Route path="/about" component={About} />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/work" exact component={Work} />
+          <Route path="/work/:project" component={WorkProject} />
+          <Route path="/about" component={About} />
+        </Switch>
       </div>
     </Router>
   );

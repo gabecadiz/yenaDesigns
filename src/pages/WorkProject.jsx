@@ -19,8 +19,10 @@ class About extends Component {
     const { projectTitle } = this.state;
     return (
       <div>
-        <header>WORK PROJECT</header>
-        <h1>{projectTitle}</h1>
+        <div className="work-project">
+          <header>WORK PROJECT</header>
+          <h1>{projectTitle}</h1>
+        </div>
       </div>
     );
   }
