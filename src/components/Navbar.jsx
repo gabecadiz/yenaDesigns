@@ -9,7 +9,9 @@ class Navbar extends Component {
       <header className="header">
         <div className="personal-info">
           <span className="name">
-            <img src={Icon} className="yena-logo" alt="logo" />
+            <Link to="/">
+              <img src={Icon} className="yena-logo" alt="logo" />
+            </Link>
             Yena Oh Test Deploy
           </span>
           <span className="email"> yena2009@hotmail.com</span>

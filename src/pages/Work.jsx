@@ -4,7 +4,10 @@ class Work extends Component {
   render() {
     return (
       <div>
-        <header>WORK</header>
+        <div className="work">
+          <h1 className="heading-primary">Work Page</h1>
+          <span className="subtitle">Welcome to my Overall Work</span>
+        </div>
       </div>
     );
   }

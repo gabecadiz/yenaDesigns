@@ -4,7 +4,7 @@
 
 @import 'base/base.scss';
 // @import 'base/animations.scss';
-// @import 'base/typography.scss';
+@import 'base/typography.scss';
 // @import 'base/utilities.scss';
 
 @import 'components/navbar.scss';
@@ -21,4 +21,7 @@
 // @import 'layout/header.scss';
 // @import 'layout/grid.scss';
 
-// @import 'pages/home.scss';
+@import 'pages/about.scss';
+@import 'pages/homepage.scss';
+@import 'pages/work.scss';
+@import 'pages/workproject.scss';
