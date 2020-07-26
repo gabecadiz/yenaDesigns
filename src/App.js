@@ -1,36 +1,26 @@
 import React from 'react';
-import logo from './logo.svg';
+import Icon from './images/Icon.svg';
 import './App.scss';
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+import Navbar from './Navbar';
+import About from './About';
+import Work from './Work';
+import WorkProject from './WorkProject';
+import Home from './Home';
 
 function App() {
   return (
-    <div className="App">
-      <header className="header">
-        <div className="personal-info">
-          <span className="name">Yena Oh Test Deploy</span>
-          <span className="email"> yena2009@hotmail.com</span>
-        </div>
-
-        <div className="hyper-links">
-          <span className="work">Work</span>
-          <span className="about">About</span>
-        </div>
-      </header>
-
-      <div className="hero-image">
-        <span className="hero-image-header">Welcome to my Portfolio</span>
+    <Router>
+      <div className="App">
+        <Navbar />
+        <Route path="/" exact component={Home} />
+        <Route path="/work" exact component={Work} />
+        <Route path="/work/:project" component={WorkProject} />
+        <Route path="/about" component={About} />
       </div>
-      <div className="hero-thrive">
-        <span className="hero-thrive-header">THRIVE</span>
-      </div>
-
-      <footer className="footer">
-        <div>FOLLOW ME ON LINKED</div>
-        <span className="watermark">
-          Designed by Yena Oh in 2019. All rights reserved.
-        </span>
-      </footer>
-    </div>
+    </Router>
   );
 }
 
