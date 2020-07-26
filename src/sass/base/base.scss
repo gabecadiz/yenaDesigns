@@ -11,6 +11,19 @@
 use font-size of 62.5% to allow users to have changed default font size if needed, if not it will default from 16root px to 10pxs*/
 html {
   font-size: 62.5%;
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  @include respond(tab-port) {
+    font-size: 60%;
+  }
+  @include respond(tab-land) {
+    font-size: 70%;
+  }
+  @include respond(big-desktop) {
+    font-size: 80%;
+  }
 }
 
 /* setting font properties for whole webpage, inherited into all properties */
