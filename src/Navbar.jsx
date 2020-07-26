@@ -16,10 +16,10 @@ class Navbar extends Component {
         </div>
         <nav>
           <div className="hyper-links">
-            <Link>
+            <Link to="/work">
               <span className="work">Work</span>
             </Link>
-            <Link>
+            <Link to="/about">
               <span className="about">About</span>
             </Link>
           </div>
