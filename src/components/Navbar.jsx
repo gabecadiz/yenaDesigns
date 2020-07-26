@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
-import Icon from './images/Icon.svg';
+import Icon from '../images/Icon.svg';
 
 class Navbar extends Component {
   render() {
