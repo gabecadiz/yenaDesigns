@@ -4,12 +4,9 @@ import ImageSmall from '../images/placeholder-small.JPG';
 import ImageMedium from '../images/placeholder-medium.JPG';
 import ImageLarge from '../images/placeholder-large.JPG';
 
-import Icon2 from '../images/Icon2.svg';
-import Icon from '../images/Icon.svg';
-
 const ResponsiveImage = () => (
   <img
-    alt="hero image"
+    alt="hero banner"
     src={ImageLarge}
     srcSet={`${ImageSmall} 250w, ${ImageMedium} 415w, ${ImageLarge} 600w`}
     sizes="(max-width: 415px) 50vw, (max-width:600) 75vw, 600px"
