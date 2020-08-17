@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 
 import Icon from '../images/Icon.svg';
+import Icon2 from '../images/Icon2.svg';
 
 class Navbar extends Component {
   render() {
@@ -10,7 +11,11 @@ class Navbar extends Component {
         <div className="personal-info">
           <span className="name">
             <Link to="/">
-              <img src={Icon} className="yena-logo" alt="logo" />
+              <img
+                srcSet={`${Icon} 1x, ${Icon2} 2x`}
+                className="yena-logo"
+                alt="logo"
+              />
             </Link>
             Yena Oh Test Deploy
           </span>
