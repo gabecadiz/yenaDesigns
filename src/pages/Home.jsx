@@ -9,8 +9,10 @@ import Icon from '../images/Icon.svg';
 
 const ResponsiveImage = () => (
   <img
-    src={ImageMedium}
-    srcSet={`${ImageSmall} 600w, ${ImageMedium} 900w, ${ImageLarge} 1200w`}
+    alt="hero image"
+    src={ImageLarge}
+    srcSet={`${ImageSmall} 250w, ${ImageMedium} 415w, ${ImageLarge} 600w`}
+    sizes="(max-width: 415px) 50vw, (max-width:600) 75vw, 600px"
   />
 );
 
@@ -23,14 +25,6 @@ class Home extends Component {
         <picture className="homepage__wallpaper">
           {/* picture element allows multiple sources for 1 image*/}
           <ResponsiveImage />
-          <source
-            srcSet={`${ImageSmall} 1x, ${ImageSmall} 2x`}
-            media="max-width: 600px"
-          ></source>
-          <source
-            srcSet={`${ImageMedium} 1x, ${ImageMedium} 2x`}
-            media="max-width: 1200px"
-          ></source>
         </picture>
         <span className="subtitle">Welcome to my website</span>
       </div>
